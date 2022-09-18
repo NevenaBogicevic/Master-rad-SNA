@@ -101,13 +101,13 @@ setdiff(prosireni_uzorak, unique(tvitovi_pu$screenName))
 
 metrika_ou <- naloziMeta(osnovni_uzorak$Nalog)
 
-### 3.5 Skidanje podataka o tvitovima osnovnog uzorka u toku posmatranog perioda ###
+### 3.4 Skidanje podataka o tvitovima osnovnog uzorka u toku posmatranog perioda ###
 
 metrika_tvitovi_ou <- retfav(tvitovi_ou)
 
 view(metrika_tvitovi_ou)
 
-### 3.6 Pravljenje tabela za izvestaj (Dodatak 1: Podaci o nalozima osnovnog uzorka i Dodatak 2: Klasicne metrike osnovnog uzorka) ###
+### 3.5 Pravljenje tabela za izvestaj (Dodatak 1: Podaci o nalozima osnovnog uzorka i Dodatak 2: Klasicne metrike osnovnog uzorka) ###
 
 tab_ou <- cbind(osnovni_uzorak, metrika_ou["DatumOtvaranja"])
 
@@ -130,7 +130,7 @@ tab_klas_met <- read.csv("tabela_klas_met.csv",
                          stringsAsFactors = F)
 
 
-### 3.7 Vizualizacija prosecnog retvita po listama
+### 3.6 Vizualizacija prosecnog retvita po listama
 
 
 izb <- c(4, 11, 12)
@@ -151,7 +151,7 @@ ggplot(pros_ret_lis, aes(x = Pros.Ret, y = reorder(Lista, Pros.Ret), fill = List
   labs(y= "Lista", x = "Prosecni retvit", title= "Prosecni retvit po listama") +
   theme_bw()+ theme(legend.position = "none")
 
-### 3.8 Vizualizacija prosecnog retvita po frakcijama
+### 3.7 Vizualizacija prosecnog retvita po frakcijama
 
 izb1 <- c(5, 11, 12)
 

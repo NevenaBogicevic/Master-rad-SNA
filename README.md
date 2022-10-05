@@ -1,6 +1,9 @@
 # Master-rad-SNA
-Primena analize društvenih mreža za proučavanje političke komunikacije na Tviteru: Primer predsedničkih i parlamentarnih izbora u Srbiji 2022.
--Analiza je sprovedena u programskom jeziku R
+Mater teza- Primena analize društvenih mreža za proučavanje političke komunikacije na Tviteru: Primer predsedničkih i parlamentarnih izbora u Srbiji 2022.
+
+Cilj ovog projekta je analiza aktivnosti političkih partija na Tviter-u za vreme trajanja kampanje za parlamentarne i predsedničke izbore u Srbiji 2022.godine.
+
+Istraživanje je zasnovano na kvantitativnoj analizi osnovnih metrika popularnosti Tviter naloga i primeni metoda analize društvenih mreža (Social Network Analysis – SNA), a sama analiza je sprovedena u programskom jeziku R.
 
 -Projekat sadrži fajlove:
 
